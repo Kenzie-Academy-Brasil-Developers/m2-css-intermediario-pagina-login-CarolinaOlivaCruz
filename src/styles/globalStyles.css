@@ -1,15 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --color-primary: /* definir */;
+:root {
+    --color-primary: #9B3D57;
+    --color-pink-0: #f6e5e9;
+    --color-pink-1: #F4B9BD;
+    --color-pink-2: #FDD0DA;
+    --color-pink-3: #fcf5f6;
     --color-grey-1: #191C1F;
     --color-grey-2: #212529;
     --color-grey-3: #343A40;
     --color-grey-4: #ADB5BD;
     --color-grey-5: #CED4DA;
     --color-grey-6: #EDF2FF;
+    --border-radius: 8px;
 }
