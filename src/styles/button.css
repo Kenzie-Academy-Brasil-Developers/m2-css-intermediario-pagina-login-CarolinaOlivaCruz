@@ -1,0 +1,8 @@
+.input-button {
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: var(--border-radius);
+    background-color: var(--color-pink-1);
+    color: var(--color-primary);
+}

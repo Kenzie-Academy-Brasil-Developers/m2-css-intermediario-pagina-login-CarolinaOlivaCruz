@@ -1,0 +1,13 @@
+.input-value {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    border: none;
+    outline: 0;
+    border-radius: var(--border-radius);
+    background-color: var(--color-pink-0);
+}
+
+.input-value::placeholder {
+    color: var(--color-primary);
+}

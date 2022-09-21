@@ -39,39 +39,22 @@ figure img {
     gap: 10px;
 }
 
-.section-login form input {
-    height: 40px;
-    width: 300px;
-    padding: 10px;
-    border: none;
-    outline: 0;
-    border-radius: var(--border-radius);
-    background-color: var(--color-pink-0);
-}
-
-.section-login form input::placeholder {
-    color: var(--color-primary);
-}
-
-.section-login form p {
+.section-login #new-password {
     color: var(--color-pink-1);
-}
-
-.section-login form button {
-    height: 40px;
-    width: 300px;
     border: none;
-    border-radius: var(--border-radius);
-    background-color: var(--color-pink-1);
-    color: var(--color-primary);
+    background-color: var(--color-primary);
 }
 
 .footer {
     width: 326px;
     height: 250px;
     margin: 50px auto;
-    background-color: var(--color-pink-1);
+    background-color: var(--color-primary);
     border-radius: var(--border-radius);
+}
+
+.footer h2 {
+    color: var(--color-pink-1);
 }
 
 .footer form {
@@ -82,21 +65,27 @@ figure img {
     gap: 10px;
 }
 
-.footer form input {
-    height: 40px;
-    width: 300px;
-    padding: 10px;
-    border: none;
-    outline: 0;
+#modal_container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 467px;
+    height: 204px;
+    padding: 90px;
+    gap: 10px;
+    background-color: var(--color-primary);
     border-radius: var(--border-radius);
-    background-color: var(--color-pink-0);
 }
 
-.footer form button {
-    height: 40px;
-    width: 300px;
-    border: none;
-    border-radius: var(--border-radius);
-    background-color: var(--color-primary);
+#modal_container form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#modal_container form h2 {
     color: var(--color-pink-1);
 }
