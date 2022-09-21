@@ -23,7 +23,7 @@ function createLoginModal() {
     closeModal.id = 'close_modal'
     closeModal.innerText = 'X'
 
-    formTitle.innerText = 'Login'
+    formTitle.innerText = 'Cadastre uma nova senha'
 
     passwordInput1.placeholder = 'Digite sua nova senha'
     passwordInput1.type = 'password'
