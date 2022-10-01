@@ -8,46 +8,46 @@
 
 function createLoginModal() {
     const modalContainer = document.createElement('section')
+    modalContainer.id = 'modal-container'
+
     const contentContainer = document.createElement('div')
-    const buttonContainer = document.createElement('div')
+    contentContainer.className = 'content-container'
+
+    const titleModal = document.createElement('div')
+    titleModal.className = 'title-modal'
+    const titleH2 = document.createElement('h2')
+    titleH2.innerText = 'Cadastre uma nova senha'
     const closeModal = document.createElement('button')
-    const formContainer = document.createElement('form')
-    const formTitle = document.createElement('h2')
-    const passwordInput1 = document.createElement('input')
-    const passwordInput2 = document.createElement('input')
-    const submitButton = document.createElement('button')
-    const message = document.createElement('p')
-
-    modalContainer.id = 'modal_container'
-
-    closeModal.id = 'close_modal'
+    closeModal.id = 'close-modal'
     closeModal.innerText = 'X'
 
-    formTitle.innerText = 'Cadastre uma nova senha'
-
+    const formContainer = document.createElement('form')
+    const passwordInput1 = document.createElement('input')
     passwordInput1.placeholder = 'Digite sua nova senha'
     passwordInput1.type = 'password'
     passwordInput1.classList = 'input-value'
-
+    const passwordInput2 = document.createElement('input')
     passwordInput2.placeholder = 'Digite sua nova senha novamente'
     passwordInput2.type = 'password'
     passwordInput2.classList = 'input-value'
-
+    const submitButton = document.createElement('button')
+    submitButton.type = 'submit'
     submitButton.innerText = 'Salvar'
     submitButton.classList = 'input-button'
+    const message = document.createElement('p')
 
-    buttonContainer.append(closeModal)
-    formContainer.append(formTitle, passwordInput1, passwordInput2, submitButton, message)
-    contentContainer.append(buttonContainer, formContainer)
-    modalContainer.append(contentContainer)
-    
+
+    titleModal.append(titleH2, closeModal)
+    formContainer.append(passwordInput1, passwordInput2, submitButton)
+    contentContainer.append(titleModal, formContainer)
+    modalContainer.appendChild(contentContainer)
 
     return modalContainer
 }
 
 function showModal() {
     const modalButton = document.getElementById('new-password')
-    const mainContainer = document.getElementById('main_container')
+    const mainContainer = document.getElementById('main-container')
 
     modalButton.addEventListener('click', (event) => {
         event.preventDefault()
@@ -60,8 +60,8 @@ function showModal() {
 }
 
 function closeModal() {
-    const closeModalButton = document.getElementById('close_modal')
-    const modalContainer = document.getElementById('modal_container')
+    const closeModalButton = document.getElementById('close-modal')
+    const modalContainer = document.getElementById('modal-container')
 
     closeModalButton.addEventListener('click', () => {
         modalContainer.remove()
